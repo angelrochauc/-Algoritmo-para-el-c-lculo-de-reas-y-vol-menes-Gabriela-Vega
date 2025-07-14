@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calculadora Geométrica</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🧮 Calculadora Geométrica</h1>
+      <h2>Gabriela Vega</h2>
+    <p class="descripcion">Selecciona una figura para calcular su área, perímetro o volumen.</p>
+
+    <select id="figura" onchange="mostrarFormulario()">
+      <option value="">Selecciona una figura</option>
+      <option value="cuadrado">🟦 Cuadrado</option>
+      <option value="rectangulo">📐 Rectángulo</option>
+      <option value="triangulo">🔺 Triángulo</option>
+      <option value="circulo">⚪ Círculo</option>
+      <option value="cubo">🧊 Cubo</option>
+      <option value="esfera">🌐 Esfera</option>
+      <option value="cilindro">🥫 Cilindro</option>
+    </select>
+
+    <div id="formulario"></div>
+    <div id="resultado"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
